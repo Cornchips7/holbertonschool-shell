@@ -9,4 +9,9 @@
 8. chmod 007 hello-Script that sets the permission to the file hello as follows: Owner: no permission at all, Group: no permission at all, Other users: all the permissions
 9. chmod 753 hello-Script that sets the mode of the file hello to this: -rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello
 10. chmod --reference olleh hello-script that sets the mode of the file hello the same as olleh’s mode
-11.
+11. chmod -R a+X ./-Script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
+12. mkdir -m 751 my_dir-Script that creates a directory called my_dir with permissions 751 in the working directory.
+13. chgrp school hello-Script that changes the group owner to school for the file hello
+14. chown -R vincent:staff ./-Script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory.
+15. chown -h vincent:staff _hello-Script that changes the owner and the group owner of _hello to vincent and staff respectively.
+16. chown --from=guillaume vincent hello-Script that changes the owner of the file hello to vincent only if it is owned by the user guillaume.
